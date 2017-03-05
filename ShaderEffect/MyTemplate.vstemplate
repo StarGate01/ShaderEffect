@@ -1,0 +1,16 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>ShaderEffect.fx</DefaultName>
+    <Name>Shader Effect (WPF)</Name>
+    <Description>A HLSL pixelshader for a WPF effect</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>WPF</ProjectSubType>
+    <TemplateGroupID>WPF</TemplateGroupID>
+    <SortOrder>10</SortOrder>
+    <Icon>Effects_64x.png</Icon>
+  </TemplateData>
+   <TemplateContent>
+        <ProjectItem SubType="Code" TargetFileName="$fileinputname$.fx">Effect1.fx</ProjectItem>
+        <ProjectItem SubType="Code" TargetFileName="$fileinputname$.cs" ReplaceParameters="true">Effect1.cs</ProjectItem>
+    </TemplateContent>
+</VSTemplate>
